@@ -1,0 +1,59 @@
+/Users/thompsonwebdesign/PycharmProjects/WebScraper/venv/bin/python "/Users/thompsonwebdesign/Desktop/PyCharm CE.app/Contents/helpers/pydev/pydevconsole.py" --mode=client --port=53012
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['/Users/thompsonwebdesign/PycharmProjects/WebScraper'])
+PyDev console: starting.
+Python 3.7.4 (v3.7.4:e09359112e, Jul  8 2019, 14:54:52) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+from bs4 import BeautifulSoup
+import requests
+req_headers = {
+	'accept': 'text/html, application/xhtml+xml,application/xml;q=0,image/webp,image/apng,*/*;q=0.8',
+	'accept-encoding': gzip, deflate, br',
+	'accept-language': 'en-US,en;q=0.8',
+	'upgrade-insecure-requests': '1',
+	'user-agent': 'Mozlla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+}
+with requests.Session() as s:
+		url = 'https://www.zillow.com/homes/for_sale/Los-Angeles-CA_rb/?fromHomePage=true&shouldFireSellPageImplicitClaimGA=false&fromHomePageTab=buy'
+		r = s.get(url, headers=req_headers)
+        
+  File "<input>", line 6
+    'accept-encoding': gzip, deflate, br',
+                                    ^
+SyntaxError: invalid syntax
+from bs4 import BeautifulSoup
+import requests
+req_headers = {
+	'accept': 'text/html, application/xhtml+xml,application/xml;q=0,image/webp,image/apng,*/*;q=0.8',
+	'accept-encoding': 'gzip, deflate, br',
+	'accept-language': 'en-US,en;q=0.8',
+	'upgrade-insecure-requests': '1',
+	'user-agent': 'Mozlla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+}
+with requests.Session() as s:
+		url = 'https://www.zillow.com/homes/for_sale/Los-Angeles-CA_rb/?fromHomePage=true&shouldFireSellPageImplicitClaimGA=false&fromHomePageTab=buy'
+		r = s.get(url, headers=req_headers)
+        
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+  File "/Users/thompsonwebdesign/Desktop/PyCharm CE.app/Contents/helpers/pydev/_pydev_bundle/pydev_import_hook.py", line 21, in do_import
+    module = self._system_import(name, *args, **kwargs)
+ModuleNotFoundError: No module named 'bs4'
+
+
+
+from bs4 import BeautifulSoup
+import requests
+
+req_headers = {
+	'accept': 'text/html, application/xhtml+xml,application/xml;q=0,image/webp,image/apng,*/*;q=0.8',
+	'accept-encoding': gzip, deflate, br',
+	'accept-language': 'en-US,en;q=0.8',
+	'upgrade-insecure-requests': '1',
+	'user-agent': 'Mozlla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+}
+with requests.Session() as s:
+		url = 'https://www.zillow.com/homes/for_sale/Los-Angeles-CA_rb/?fromHomePage=true&shouldFireSellPageImplicitClaimGA=false&fromHomePageTab=buy'
+		r = s.get(url, headers=req_headers)
+    
+    
