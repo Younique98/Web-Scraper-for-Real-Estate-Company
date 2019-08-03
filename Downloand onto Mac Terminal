@@ -1,0 +1,37 @@
+thompsonwebdesign:~ thompsonwebdesign$ pip install beautifulsoup4
+Collecting beautifulsoup4
+  Downloading https://files.pythonhosted.org/packages/39/0e/cfae701dc1143409adf1dc78ebc138f7c507e342e5814b1ead2a727bc900/beautifulsoup4-4.8.0-py2-none-any.whl (97kB)
+    100% |████████████████████████████████| 102kB 106kB/s 
+Collecting soupsieve>=1.2 (from beautifulsoup4)
+  Downloading https://files.pythonhosted.org/packages/35/e3/25079e8911085ab76a6f2facae0771078260c930216ab0b0c44dc5c9bf31/soupsieve-1.9.2-py2.py3-none-any.whl
+Collecting backports.functools-lru-cache; python_version < "3" (from soupsieve>=1.2->beautifulsoup4)
+  Downloading https://files.pythonhosted.org/packages/03/8e/2424c0e65c4a066e28f539364deee49b6451f8fcd4f718fefa50cc3dcf48/backports.functools_lru_cache-1.5-py2.py3-none-any.whl
+Installing collected packages: backports.functools-lru-cache, soupsieve, beautifulsoup4
+Could not install packages due to an EnvironmentError: [Errno 13] Permission denied: '/Library/Python/2.7/site-packages/backports'
+Consider using the `--user` option or check the permissions.
+
+thompsonwebdesign:~ thompsonwebdesign$ python3 -m venv env
+source ./env/bin/activate 
+python -m pip install google-assistant-sdk[samplesthompsonwebdesign:~ thompsonwebdesign$ source ./env/bin/activate 
+(env) thompsonwebdesign:~ thompsonwebdesign$ python -m pip install google-assistant-sdk[samplespython3 -m venv env
+
+Usage:   
+  /Users/thompsonwebdesign/env/bin/python -m pip install [options] <requirement specifier> [package-index-options] ...
+  /Users/thompsonwebdesign/env/bin/python -m pip install [options] -r <requirements file> [package-index-options] ...
+  /Users/thompsonwebdesign/env/bin/python -m pip install [options] [-e] <vcs project url> ...
+  /Users/thompsonwebdesign/env/bin/python -m pip install [options] [-e] <local project path> ...
+  /Users/thompsonwebdesign/env/bin/python -m pip install [options] <archive url/path> ...
+
+no such option: -m
+(env) thompsonwebdesign:~ thompsonwebdesign$ source ./env/bin/activate 
+(env) thompsonwebdesign:~ thompsonwebdesign$ python -m pip install beautifulsoup4
+Collecting beautifulsoup4
+  Downloading https://files.pythonhosted.org/packages/1a/b7/34eec2fe5a49718944e215fde81288eec1fa04638aa3fb57c1c6cd0f98c3/beautifulsoup4-4.8.0-py3-none-any.whl (97kB)
+    100% |████████████████████████████████| 102kB 2.2MB/s 
+Collecting soupsieve>=1.2 (from beautifulsoup4)
+  Using cached https://files.pythonhosted.org/packages/35/e3/25079e8911085ab76a6f2facae0771078260c930216ab0b0c44dc5c9bf31/soupsieve-1.9.2-py2.py3-none-any.whl
+Installing collected packages: soupsieve, beautifulsoup4
+Successfully installed beautifulsoup4-4.8.0 soupsieve-1.9.2
+You are using pip version 19.0.3, however version 19.2.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+(env) thompsonwebdesign:~ thompsonwebdesign$ 
